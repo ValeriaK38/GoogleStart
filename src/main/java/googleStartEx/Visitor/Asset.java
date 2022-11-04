@@ -1,4 +1,4 @@
-package org.example.Visitor;
+package googleStartEx.Visitor;
 
 public class Asset implements Appliance {
     private int serial;

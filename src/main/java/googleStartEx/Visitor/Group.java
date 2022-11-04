@@ -1,4 +1,4 @@
-package org.example.Visitor;
+package googleStartEx.Visitor;
 
 public class Group implements Appliance {
     private final int id;

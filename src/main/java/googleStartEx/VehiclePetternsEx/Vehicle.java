@@ -1,4 +1,4 @@
-package org.example.VehiclePetternsEx;
+package googleStartEx.VehiclePetternsEx;
 
 public interface Vehicle {
     public void transport();

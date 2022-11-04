@@ -1,4 +1,4 @@
-package org.example.VehiclePetternsEx;
+package googleStartEx.VehiclePetternsEx;
 
 public class Passenger {
     private final String name;

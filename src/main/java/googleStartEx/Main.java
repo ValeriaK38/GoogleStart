@@ -1,16 +1,11 @@
-package org.example;
+package googleStartEx;
 
 import Utills.NameGenerator;
-import org.example.JobPositionEx.JobPosition;
-import org.example.JobPositionEx.Location;
-import org.example.VehiclePetternsEx.Agency;
-import org.example.VehiclePetternsEx.Passenger;
-import org.example.VehiclePetternsEx.Vehicle;
-import org.example.VehiclePetternsEx.VehicleType;
-import org.example.Visitor.*;
+import googleStartEx.VehiclePetternsEx.Agency;
+import googleStartEx.VehiclePetternsEx.Passenger;
+import googleStartEx.VehiclePetternsEx.VehicleType;
+import googleStartEx.Visitor.*;
 
-import java.awt.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

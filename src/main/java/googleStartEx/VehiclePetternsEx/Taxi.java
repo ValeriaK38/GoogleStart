@@ -1,8 +1,7 @@
-package org.example.VehiclePetternsEx;
+package googleStartEx.VehiclePetternsEx;
 
-public class Plane implements Vehicle {
-
-    private VehicleType vehicleType = VehicleType.PLANE;
+public class Taxi implements Vehicle {
+    private VehicleType vehicleType = VehicleType.TAXI;
 
     public VehicleType getVehicleType() {
         return vehicleType;
@@ -15,6 +14,6 @@ public class Plane implements Vehicle {
 
     @Override
     public void transport() {
-        System.out.println("Plane");
+        System.out.println("Taxi");
     }
 }

@@ -1,4 +1,4 @@
-package org.example.Visitor;
+package googleStartEx.Visitor;
 
 public class User implements Appliance {
     private String name;

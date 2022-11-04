@@ -1,4 +1,4 @@
-package org.example.Visitor;
+package googleStartEx.Visitor;
 
 public interface Visitor {
 //    void exportToJson(Object o);
