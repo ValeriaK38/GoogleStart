@@ -2,35 +2,68 @@ package googleStartEx;
 
 import Utills.NameGenerator;
 import googleStartEx.FarmEx.*;
+import googleStartEx.HTTPFacade.HttpFacade;
+import googleStartEx.HTTPFacade.JavaGETExample;
+import googleStartEx.HTTPFacade.JavaPOSTExample;
 import googleStartEx.VehiclePetternsEx.Agency;
 import googleStartEx.VehiclePetternsEx.Passenger;
 import googleStartEx.VehiclePetternsEx.VehicleType;
 import googleStartEx.Visitor.*;
 
+import java.util.Scanner;
+
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.client.methods.HttpPost;
+
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpHeaders;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+///////////////////////////////////////////////////////////////////// HTTP client facade
+
+        HttpFacade httpFacade = new HttpFacade();
+        httpFacade.patchRequest();
+        httpFacade.getRequest();
+        httpFacade.putRequest();
+        httpFacade.postRequest();
+        httpFacade.deleteRequest();
+
+
 ///////////////////////////////////////////////////////////////////// WoodenHorse Ex
-        List<String> farmNameList = Arrays.asList("A-farm", "B-farm", "C-farm", "D-farm", "E-farm", "F-farm", "G-farm", "K-farm");
-        Farmer farmer1 = new Farmer(farmNameList);
-
-        farmer1.getFarm().acquire(AnimalType.COW);
-        farmer1.getFarm().acquire(AnimalType.COW);
-        farmer1.getFarm().acquire(AnimalType.COW);
-        farmer1.getFarm().acquire(AnimalType.COW);
+//        List<String> farmNameList = Arrays.asList("A-farm", "B-farm", "C-farm", "D-farm", "E-farm", "F-farm", "G-farm", "K-farm");
+//        Farmer farmer1 = new Farmer(farmNameList);
+//
+//        farmer1.getFarm().acquire(AnimalType.COW);
+//        farmer1.getFarm().acquire(AnimalType.COW);
+//        farmer1.getFarm().acquire(AnimalType.COW);
+//        farmer1.getFarm().acquire(AnimalType.COW);
 //        System.out.println("before: \n"+farmer1);
-
+//
 //        farmer1.getFarm().mate(farmer1.getAnimal(),farmer1.getAnimal());
-        farmer1.move(farmer1.getAnimal());
+//        farmer1.move(farmer1.getAnimal());
 //        System.out.println("After mating season: \n"+farmer1);
-
-        WoodenStructures woodenHorseAdapter = new WoodenStructureAdapter(farmer1.getAnimal());
-        woodenHorseAdapter.roll();
-        woodenHorseAdapter.replicate();
+//
+//        WoodenStructures woodenHorseAdapter = new WoodenStructureAdapter(farmer1.getAnimal());
+//        woodenHorseAdapter.roll();
+//        woodenHorseAdapter.replicate();
 
 ///////////////////////////////////////////////////////////////////// Vehicle Ex
 //        java.util.List<String> firsNameListMale = Arrays.asList("John", "Benji", "Alex", "Henry", "Nick", "Mike", "Alon", "Ron");

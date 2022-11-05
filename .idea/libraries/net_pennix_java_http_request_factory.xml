@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="net.pennix.java.http.request.factory" type="repository">
+    <properties maven-id="net.pennix:java-net-http-request-factory:1.0.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/pennix/java-net-http-request-factory/1.0.1/java-net-http-request-factory-1.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.4.RELEASE/spring-web-5.2.4.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.4.RELEASE/spring-beans-5.2.4.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.4.RELEASE/spring-core-5.2.4.RELEASE.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.2.4.RELEASE/spring-jcl-5.2.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
